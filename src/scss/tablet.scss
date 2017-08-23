@@ -149,12 +149,14 @@
   }
 }
 
+
+
 ul.hk-social {
   margin-top: 18px;
   margin-bottom: 12px;
   width: 530px;
   padding-left: 0;
-
+  margin-left: 0;
   li {
     width: 80px;
   }
@@ -165,6 +167,12 @@ ul.hk-social {
   color: #fff;
   font-size: 27px;
   text-decoration: none;
+}
+
+.hk-header-last{
+  .hk-social{
+    display: none;
+  }
 }
 
 .hk-main .hk-central_block {

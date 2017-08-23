@@ -23,15 +23,15 @@ body {
   display: block;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .hk-header-last {
   display: block;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-
+  justify-content: flex-start;
+  position: relative;
   .hk-subscribe {
     margin-top: 20px;
     display: block;
@@ -43,9 +43,14 @@ body {
       color: #ffffff;
     }
   }
-
+  .hk-social{
+    margin-top: 24px;
+  }
   .hk-become {
     margin-top: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 }
 
@@ -89,6 +94,9 @@ body {
 
 .hk-social {
   margin-top: 50px;
+  margin-left: 120px;
+  margin-bottom: 0;
+  z-index: 1;
 }
 
 .hk-social-link a {
@@ -97,6 +105,9 @@ body {
   transition: 0.15s ease-in-out;
   font-size: 20px;
   text-decoration: none;
+  text-align: center;
+  width: 32px;
+  display: inline-block;
 }
 
 .hk-social-link a:hover {
@@ -135,6 +146,9 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   margin-bottom: 80px;
+  @media all and (max-height: 780px) and (min-width: 768px){
+    margin-bottom: 40px;
+  }
 }
 
 .hk-main .hk-central_block p {
@@ -143,6 +157,9 @@ body {
   font-size: 30px;
   font-weight: 100;
   margin-bottom: 70px;
+  @media all and (max-height: 780px) and (min-width: 768px){
+    margin-bottom: 50px;
+  }
 }
 
 .hk-main .hk-central_block a {
@@ -292,6 +309,10 @@ body {
 
 .hk-main .hk-central_block {
   height: calc(100vh - 120px);
+  @media all and (max-height: 780px) and (min-width: 768px){
+    padding-bottom: 100px;
+    box-sizing: border-box;
+  }
 }
 
 .hk-timer {
@@ -328,6 +349,7 @@ body {
   width: 40%;
   margin-left: -4px;
   background: #209aa8;
+  opacity: 0;
 }
 
 .hk-amount-header {
